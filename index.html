@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=global-20260616-1" />
+  <link rel="stylesheet" href="style.css?v=logo-live-20260616-2" />
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="DINGLIAN Home">
-      <span class="brand-mark"><i></i></span>
+      <img class="brand-logo" src="assets/dinglian-logo.png" alt="DINGLIAN Technology logo" />
       <span class="brand-name"><strong>DINGLIAN</strong><small>GLOBAL MANUFACTURING NETWORK</small></span>
     </a>
     <nav class="desktop-nav">
@@ -46,12 +46,8 @@
         </div>
       </div>
       <div class="hero-visual" aria-label="DINGLIAN brand visual">
-        <div class="visual-card">
-          <div class="logo-system">
-            <div class="symbol"><span>D</span><b></b></div>
-            <div class="wordmark">DINGLIAN</div>
-            <div class="descriptor"><span></span><em>GLOBAL MANUFACTURING NETWORK</em><span></span></div>
-          </div>
+        <div class="visual-card image-card">
+          <img class="hero-logo-img" src="assets/dinglian-logo.png" alt="DINGLIAN Global Manufacturing Network logo" />
         </div>
       </div>
     </section>
@@ -139,10 +135,8 @@
       document.body.classList.toggle('zh-mode', lang === 'zh');
       translatable.forEach(el => { el.textContent = el.dataset[lang]; });
       buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
-      localStorage.setItem('dinglian-lang', lang);
     }
     buttons.forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
-    setLang(localStorage.getItem('dinglian-lang') || 'en');
   </script>
 </body>
 </html>
