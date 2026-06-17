@@ -29,6 +29,6 @@ When photos are added, replace the `.sample-photo` placeholder in each industry 
 
 ```html
 <div class="sample-photo">
-  <img src="assets/samples/example-file.jpg" alt="Short sample description" />
+  <img src="samples/example-file.jpg" alt="Short sample description" />
 </div>
 ```
